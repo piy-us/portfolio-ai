@@ -22,7 +22,7 @@ const SOCIALS = [
   { icon: Instagram, href: contact.instagram, label: 'Instagram' },
 ].filter((s) => s.href)
 
-const HERO_IMG = `${import.meta.env.BASE_URL}anime/image.jpg`
+const HERO_IMG = `${import.meta.env.BASE_URL}public/anime/image.jpg`
 
 export default function Contact() {
   const [open, setOpen] = useState(false)
