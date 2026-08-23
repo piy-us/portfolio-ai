@@ -4,7 +4,7 @@ import { useChatContext } from './chat/ChatContext.jsx'
 
 // The hero's primary action: ask the AI something and the chat panel opens with
 // the answer. First-touch entry point into the assistant.
-const CHIPS = ['Why should we hire him?', 'Current Role','Personal Projects']
+const CHIPS = [ 'Current Role','Personal Projects','Why should we hire him?' ]
 
 export default function HeroChatInput() {
   const [draft, setDraft] = useState('')
