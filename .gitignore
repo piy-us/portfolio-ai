@@ -1,0 +1,59 @@
+# --- Secrets (never commit) ---
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+# Local scratch scripts that hold pasted API keys
+backend/apicheck.py
+**/apicheck.py
+**/scratch_*.py
+
+# --- Node / frontend ---
+node_modules
+dist
+dist-ssr
+*.local
+.vite
+
+# --- Python / backend ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# --- RAG index ---
+# backend/data/chroma IS committed on purpose: Render/HF build the Docker image
+# from this repo, so the prebuilt index must be in it (~19MB, fine for git).
+# Rebuild it locally with `python ingest/ingest.py`, then commit + redeploy.
+
+# --- Runtime data (never commit) ---
+backend/data/conversations.db
+*.db
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+.vercel
+.env*
+# Local logs
+*.log
+
+# Archives / backups
+*.zip
+
+# Unused deployment config
+render.yaml
+
+# Local images / screenshots
+image.jpg
+image2.png
+image3.png
+
+# Documentation
+docs/

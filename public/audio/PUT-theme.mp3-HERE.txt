@@ -1,0 +1,7 @@
+Drop your royalty-free lofi track here, named exactly:
+
+  theme.mp3
+
+Get one free at https://pixabay.com/music/search/lofi/ (download MP3, rename to theme.mp3).
+Then restart the dev server (npm run dev) and reload the page.
+The music button (3 equalizer bars, bottom-left corner) only appears when this file exists.
